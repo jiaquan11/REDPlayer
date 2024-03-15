@@ -4,12 +4,13 @@ plugins {
 }
 
 android {
-    compileSdk 34
+    compileSdkVersion 29
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.xingin.openredplayer"
-        minSdk 21
-        targetSdk 28
+        minSdk 16
+        targetSdk 29
         versionCode 1
         versionName "1.0"
         resConfigs "en"

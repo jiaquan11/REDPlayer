@@ -2,14 +2,13 @@ package com.xingin.openredplayercore.core.api;
 
 import android.content.Context;
 import android.net.Uri;
-import android.os.Bundle;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
+import com.xingin.openredplayercore.core.impl.RedPlayerEvent;
+
 import java.io.IOException;
 import java.util.Map;
-
-import com.xingin.openredplayercore.core.impl.RedPlayerEvent;
 
 /**
  * MediaPlayer Core API
