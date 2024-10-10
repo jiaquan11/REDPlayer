@@ -1,5 +1,5 @@
 /**
- * Interface define of player logger.
+ * 日志接口函数定义
  */
 export interface IRedPlayerLogger {
   i(tag: string, msg?: string): void

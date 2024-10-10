@@ -2,7 +2,7 @@ import util from '@ohos.util'
 import netCacheNative from 'libredplayer.so'
 
 /**
- * Red player preload.
+ * 播放器预加载类
  */
 export class RedPlayerPreload {
 
@@ -64,7 +64,6 @@ export class RedPlayerPreloadListener implements IRedPlayerPreloadListener {
   public constructor() {}
 
   onNativeEvent(instanceId: string, event: number, url: string): void {
-
   }
 }
 

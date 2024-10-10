@@ -14,9 +14,9 @@
         "type": "HarmonyOS",
         "material": {
           "certpath": "C:\\Users\\admin\\.ohos\\config\\default_harmony_30O9p0WxUxWelkwEye-C6OcpR6qHXyrxbw_PjpG3qs8=.cer",
-          "storePassword": "0000001BF7D2655633AF34DE48A78A13FEE424821F5B879AA064792FACF204741D8FE34C03B02A6DDA8F4B",
+          "storePassword": "0000001B35177220CBADEEC31D8FDED92AA4588B33014A0D2D896DB35C4680C064B591FDF3D42B350B4CFB",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B93F4502747BA5B70B109B55F2ECCCA05D06919AEF786ED292AA379D2DC2A095303D4CE728DF67B",
+          "keyPassword": "0000001B12D7D7F7DE18C3E7AED3A4E0858E37CDBB9D8BAB98EAD790BDC5B356BCEA731578EF3E2A8B176A",
           "profile": "C:\\Users\\admin\\.ohos\\config\\default_harmony_30O9p0WxUxWelkwEye-C6OcpR6qHXyrxbw_PjpG3qs8=.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "C:\\Users\\admin\\.ohos\\config\\default_harmony_30O9p0WxUxWelkwEye-C6OcpR6qHXyrxbw_PjpG3qs8=.p12"
