@@ -1,4 +1,18 @@
+/**
+*模块级别的 srcEntry: 定义整个模块的入口文件，通常用于模块的初始化和整体逻辑
+*能力级别的 srcEntry: 定义特定能力的入口文件，专注于该能力的具体实现和功能
+*/
 {
+  /**
+   *entry模块:  所有页面配置描述
+   *type：entry表示这个一个入口模块，且唯一
+   *srcEntry:指定应用程序整个模块窗口初始化逻辑入口文件
+   *mainElement：指定应用程序的加载首页组件(由组件去加载页面)
+   *deviceTypes：指定可以匹配的设备类型
+   *deliveryWithInstall:指示模块是否与应用程序的安装过程一起交付
+   *installationFree:指示模块是否支持免安装运行
+   *pages:用于指定模块中包含的所有页面配置
+   */
   "module": {
     "name": "entry",
     "type": "entry",
@@ -17,32 +31,33 @@
         "name": "DemoEntryAbility",
         "srcEntry": "./ets/entryability/DemoEntryAbility.ets",
         "description": "$string:EntryAbility_desc",
-        "icon": "$media:icon",
-        "label": "$string:EntryAbility_label",
-        "startWindowIcon": "$media:icon_title_logo",
-        "startWindowBackground": "$color:start_window_background",
+//        "icon": "$media:icon",   //应用程序的图标，这里不需要，在app.json5已设置，重复设置了
+//        "label": "$string:EntryAbility_label",//应用程序的文字标签，这里不需要，在app.json5已设置，重复设置了
+        "startWindowIcon": "$media:icon_title_logo", //启动应用窗口的背景图,只能在这里设置,不能在app.json5中设置
+        "startWindowBackground": "$color:start_window_background", //打开应用窗口的背景颜色，只能在这里设置,不能在app.json5中设置
         "exported": true,
         "skills": [
           {
             "entities": [
-              "entity.system.home"
+              "entity.system.home"//可切换到home页
             ],
             "actions": [
-              "action.system.home"
+              "action.system.home"//可切换到home页
             ]
           }
         ]
       }
     ],
+
     "requestPermissions":[
       {
-        "name" : "ohos.permission.INTERNET",
+        "name" : "ohos.permission.INTERNET", //申请网络权限
         "reason": "$string:internet_permission_reason",
         "usedScene": {
           "abilities": [
-            "FormAbility"
+            "FormAbility" //用于轻量级表单类组件
           ],
-          "when":"inuse"
+          "when":"inuse" //在需要请求的时候
         }
       }
     ]

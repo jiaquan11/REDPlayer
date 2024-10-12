@@ -1,4 +1,7 @@
-export { RedPlayerInitManager, RedPlayerConfigBuilder } from './src/main/ets/redplayer/core/RedPlayerInitManager'
+/**
+ * Har包导出接口文件，全部需要放在这个文件中
+ */
+export { RedPlayerInitManager } from './src/main/ets/redplayer/core/RedPlayerInitManager'
 export { RedPlayerFactory, PlayerCoreType } from './src/main/ets/redplayer/core/RedPlayerFactory'
 export { RedPlayerDataSource, SourceType } from './src/main/ets/redplayer/core/RedPlayerDataSource'
 export { RedConfigType } from './src/main/ets/redplayer/core/implements/RedConfig'

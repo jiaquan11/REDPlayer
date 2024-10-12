@@ -1,6 +1,6 @@
 {
   "name": "libredplayer.so",
   "types": "./index.d.ts",
-  "version": "",
+  "version": "1.0.0",
   "description": "Lib red player. Link the so to ts interface declaration."
 }

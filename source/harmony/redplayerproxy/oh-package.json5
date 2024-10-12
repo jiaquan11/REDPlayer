@@ -1,4 +1,9 @@
 {
+  /**
+   *当前为Har模块名redplayerproxy
+   *index.ets:为模块接口的导出文件
+   *模块依赖dependencies：指定了本地的so所在路径
+   */
   "name": "redplayerproxy",
   "version": "1.0.0",
   "description": "Please describe the basic information.",

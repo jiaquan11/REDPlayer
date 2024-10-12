@@ -1,4 +1,10 @@
 {
+  /**
+   *entry模块
+   *此模块为应用程序的唯一的HAP模块
+   *main:为空，表示entry不需要导出接口
+   *dependencies：当前指代了本地的HAR模块，并指定了外部导入的模块别名为：@xhs/redplayer
+   */
   "name": "entry",
   "version": "1.0.0",
   "description": "Please describe the basic information.",

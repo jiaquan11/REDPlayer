@@ -1,4 +1,13 @@
 {
+  /**
+   *应用程序全局的编译配置文件
+   *app配置
+   *compatibleSdkVersion：指定系统SDK的版本
+   *runtimeOS:指定运行的系统
+   *signingConfigs：指定应用签名配置
+   *modules配置
+   *指定了两个模块entry和redplayerproxy
+   */
   "app": {
     "products": [
       {
@@ -39,7 +48,7 @@
     },
     {
       "name": "redplayerproxy",
-      "srcPath": "./redplayerproxy"
+      "srcPath": "./redplayerproxy" //模块路径
     }
   ]
 }

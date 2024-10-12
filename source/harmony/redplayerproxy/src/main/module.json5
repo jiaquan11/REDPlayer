@@ -1,4 +1,10 @@
 {
+  /**
+   *har模块描述
+   *name:模块名
+   *type:模块类型  har表示是静态包
+   *deviceTypes:可以不设置，都是在entry模块中设置
+   */
   "module": {
     "name": "redplayerproxy",
     "type": "har",

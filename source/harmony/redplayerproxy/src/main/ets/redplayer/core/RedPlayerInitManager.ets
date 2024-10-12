@@ -6,37 +6,20 @@ import { PlayerNativeEventAdapter } from './implements/HmRedMediaPlayer';
 import { GlobalConfig } from './implements/RedConfig';
 
 /**
- * Init management of red player.
+ * 播放器初始化管理类
  */
 export class RedPlayerInitManager {
-
   /**
-   * Init global config of red player
-   * Call once in a progress, before player use.
+   * 初始化播放器全局配置，只需调用一次
    */
-  public static initPlayer(builder: RedPlayerConfigBuilder) {
+  public static initPlayer(cachePath: string, logger:IRedPlayerLogger) {
     libnative.registerLogListener(NativeLoggerAdapter.getInstance())
     libnative.registerPlayerEventListener(PlayerNativeEventAdapter.getInstance())
-    if (builder.cachePath) {
-      GlobalConfig.cachePath = builder.cachePath
+    if (cachePath) {
+      GlobalConfig.cachePath = cachePath
     }
-    if (builder.logger) {
-      RedPlayerLogger.loggerImpl = builder.logger
+    if (logger) {
+      RedPlayerLogger.loggerImpl = logger
     }
   }
-}
-
-/**
- * Player global config options define.
- */
-export class RedPlayerConfigBuilder {
-  /**
-   * Player video cache disk path.
-   */
-  cachePath: string | undefined
-
-  /**
-   * Custom define logger.
-   */
-  logger: IRedPlayerLogger | undefined
 }

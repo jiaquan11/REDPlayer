@@ -1,4 +1,12 @@
 {
+  /**
+   *har模块redplayerproxy的编译配置
+   *apiType:接口模式为Stage模式
+   *enableOverride:true 表示允许用户提供的配置覆盖默认的NAPI库过滤设置。这意味着用户可以自定义NAPI库的选择和使用
+   *externalNativeOptions:外部原生代码构建相关的选项，通常用于配置CMake或其他构建工具
+   *arguments:传递给CMake的额外参数。在这里，"-DOHOS_STL=c++_shared"指定使用共享的C++标准库（STL）
+   *cppFlags:用于指定额外的C++编译标志。在这个例子中，它是空字符串，表示没有额外的编译标志.
+   */
   "apiType": "stageMode",
   "buildOption": {
     "napiLibFilterOption": {
@@ -13,6 +21,7 @@
       "cppFlags": ""
     },
   },
+
   "targets": [
     {
       "name": "default",

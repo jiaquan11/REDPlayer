@@ -1,4 +1,9 @@
 {
+  /**
+   *整个应用程序的模块全局配置(默认生成，不需要设置)
+   *name:hmredplayer  指定了一个全局的应用模块名
+   *其它可无需配置
+   */
   "modelVersion": "5.0.0",
   "name": "hmredplayer",
   "version": "1.0.0",

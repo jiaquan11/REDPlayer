@@ -1,10 +1,19 @@
 {
+  /**
+   *应用程序全局配置
+   *bundleName:应用程序全局包名
+   *vendor:应用程序发布者的名称
+   *versionCode:应用版本号
+   *versionName:应用版本名称
+   *icon:应用的图标(必须设置)
+   *label:应用图标下面的文字即应用名(必须设置)
+   */
   "app": {
     "bundleName": "com.xingyin.hmredplayer",
     "vendor": "example",
     "versionCode": 1000000,
     "versionName": "1.0.0",
     "icon": "$media:app_icon",
-    "label": "$string:app_name"
+    "label": "$string:app_name",
   }
 }

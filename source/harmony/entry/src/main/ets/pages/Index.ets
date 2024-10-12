@@ -37,11 +37,11 @@ struct Index {
           .width(24)
           .height(24)
           .objectFit(ImageFit.Contain)
-        Text($r('app.string.app_name'))
-          .fontColor('#FFFFFF')
-          .fontSize(18)
-          .fontWeight(FontWeight.Bold)
-          .margin({ left: 10 })
+        Text($r('app.string.EntryAbility_label'))
+          .fontColor('#FFFFFF') //文字设置为白色
+          .fontSize(18) //文字大小
+          .fontWeight(FontWeight.Bold) //文字粗细
+          .margin({ left: 10 }) //文字的边距
       }
       .width('100%')
       .height('10%')
@@ -165,7 +165,7 @@ struct Index {
       .height('90%')
     }
     .width('100%')
-    .backgroundColor('#000000')
+    .backgroundColor('#000000') //整个页面背景色为黑色
   }
 }
 
